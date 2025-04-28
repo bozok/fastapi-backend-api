@@ -1,0 +1,27 @@
+[project]
+name = "template-project-setup"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "alembic>=1.15.2",
+    "celery>=5.5.2",
+    "fastapi>=0.115.12",
+    "psycopg[binary]>=3.2.6",
+    "pydantic-settings>=2.9.1",
+    "pydantic[email]>=2.11.3",
+    "redis>=5.2.1",
+    "sqlalchemy>=2.0.40",
+    "uvicorn>=0.34.2",
+]
+
+[dependency-groups]
+dev = [
+    "black>=25.1.0",
+    "httpx>=0.28.1",
+    "mypy>=1.15.0",
+    "pytest>=8.3.5",
+    "pytest-asyncio>=0.26.0",
+    "ruff>=0.11.7",
+]
